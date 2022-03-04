@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funance Store</title>
+	<style >
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.head{
+			width: 100%;
+			height: 80px;
+			background-color: wheat;
+		}
+		.h1{
+			float: left;
+			width: 40%;
+			height: 80px;
+			background-color: white;
+		}
+
+		.h1 img{
+			margin: 30px 10px 10px 180px;
+			float: left;
+		}
+		.h2{
+			width: 60%;
+			height: 80px;
+			float: right;
+			background-color:white;
+		}
+		.h2 ul{
+			display: block;
+			
+			overflow: hidden;
+
+		}
+		.h2 ul li{
+			display: inline-flex;
+			padding: 30px 5px 30px 10px;
+			margin-left:30px;
+			font-family: sans-serif;
+			text-transform: uppercase;
+			font-style: italic;
+			cursor: pointer;
+			font-weight: bolder;
+
+		}
+		.ig{
+			float: right;
+			cursor: pointer;
+			
+			margin: -55px 240px 20px 5px;
+
+		}
+		.ik{
+			margin-left: 60px;
+			cursor: pointer;
+			margin-bottom: -10px;
+
+		}
+		.i{
+			margin-left: 10px;
+			cursor: pointer;
+			margin-bottom: -12px;
+		}
+		.Top{
+			width: 100%;
+			height: 660px;
+			background-color: wheat;
+		}
+		.Top img{
+			width: 100%;
+			height: 660px;
+
+		}
+		.mid{
+			width: 100%;
+			height: 3870px;
+			background-color: white;
+		}
+		.m1{
+			width: 35%;
+			height: 260px;
+			background-color: white;
+			float: left;
+			margin-top: 120px;
+			margin-left: 170px;
+		}
+		.but{
+			width: 105px;
+			height:50px;
+			color: white;
+			font-weight: bold;
+			font-style: italic;
+			cursor: pointer;
+			border:none;
+			background-color: darkgray;
+		}
+		.but:hover{
+			background-color: lightgrey;
+			opacity: 0.9;
+			transition: all 0.5s ease ;
+		}
+		.m2{
+			width: 38%;
+			height: 260px;
+			
+			float: right;
+			margin-top: 120px;
+			margin-right: 180px;
+			
+		}
+		.m2 img{
+			width: 100%;
+			height: 260px;
+
+		}
+
+		.m3 {
+			width: 35%;
+			height: 260px;
+			
+			float: left;
+			margin-top: 120px;
+			margin-left: 170px;
+		}
+		.m3 img{
+			width: 100%;
+			height: 260px;
+
+		}
+		.m4{
+			width: 36%;
+			height: 260px;
+			float: right;
+			margin-right: 180px;
+			margin-top: 120px;
+			background-color: white;
+		}
+		.m5{
+
+			width: 33%;
+			height: 260px;
+			background-color: white;
+			float: left;
+			margin-top: 120px;
+			margin-left: 170px;
+		
+
+		}
+
+		.m6{
+			width: 40%;
+			height: 260px;
+			
+			float: right;
+			margin-top: 120px;
+			margin-right: 170px;
+			
+		}
+		.m6 img{
+			width: 100%;
+			height: 260px;
+
+		}
+		.m7{
+			 width: 35%;
+			 height: 260px;
+			 background-color: white;
+			 float: left;
+
+			margin-top: 120px;
+			margin-left: 170px;
+		}
+		.m7 img{
+			width: 100%;
+			height: 260px;
+		}
+		.m8{
+			width: 36%;
+			height: 260px;
+			float: right;
+			margin-right: 180px;
+			margin-top: 120px;
+			background-color: white;
+		}
+		.m9{
+
+			width: 32%;
+			height: 260px;
+			background-color: white;
+			float: left;
+			margin-top: 120px;
+			margin-left: 170px;
+		
+		}
+
+		.m10{
+			width: 40%;
+			height: 260px;
+			
+			float: right;
+			margin-top: 120px;
+			margin-right: 170px;
+			
+		}
+		.m10 img{
+			width: 100%;
+			height: 260px;
+
+		}
+		.m11{
+			 width: 35%;
+			 height: 260px;
+			
+			 float: left;
+
+			margin-top: 120px;
+			margin-left: 170px;
+		}
+		.m11 img{
+			width: 100%;
+			height: 260px;
+		}
+		.m12{
+			width: 36%;
+			height: 260px;
+			float: right;
+			margin-right: 180px;
+			margin-top: 120px;
+			background-color: white;
+		}
+		.but2{
+
+			width: 218px;
+			height:50px;
+			color: white;
+			font-weight: bolder;
+			letter-spacing: 1px;
+			font-style: italic;
+			cursor: pointer;
+			border:none;
+			background-color: darkgray;
+			margin-top: 10px;
+
+		}
+		.but2:hover{
+			background-color: lightgrey;
+			opacity: 0.9;
+			transition: all 0.5s ease ;
+		}
+		.m13{
+
+			width: 32%;
+			height: 260px;
+			background-color: white;
+			float: left;
+			margin-top: 120px;
+			margin-left: 170px;
+		
+		}
+		.m14{
+			width: 40%;
+			height: 260px;
+			
+			float: right;
+			margin-top: 120px;
+			margin-right: 170px;
+			
+		}
+		.m14 img{
+			width: 100%;
+			height: 260px;
+
+		}
+		.m15{
+			width: 100%;
+			height: 80px;
+			margin-top: 80px;
+			float: left;
+			
+		}
+		.m16{
+			width: 75%;
+			height: 600px;
+			margin-top: 90px;
+			float: left;
+			
+			margin-left: 170px;
+		}
+		.m16 iframe{
+			width: 100%;
+			height: 600px;
+
+		}
+		.m17{
+			width: 100%;
+			height: 242px;
+			background-color: white;
+			float: left;
+			margin-top: 120px;
+		}
+		.f1{
+			width: 40%;
+			height: 220px;
+			background-color: white;
+			float: left;
+			margin-top: 20px;
+		}
+		.f1 ul{
+			list-style: none;
+			display: block;
+			margin-left: 200px;
+
+		}
+		.f1 ul li{
+			line-height: 32px;
+			font-size: 20px;
+			font-style: italic;
+		}
+		.f2{
+			width: 45%;
+			height: 220px;
+			background-color: white;
+			float: right;
+			margin-top: 20px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="head">
+		<div class="h1">
+		<img src="img/flogo.png">
+		</div>
+		<div class="h2">
+		<ul>
+
+			<li>Home</li>
+			<li> <a href="catlog.html"> Catlog</a></li>
+			<li> <a href="contact_us.html"> Contact Us</a></li>
+			<li> <a href="track_order.html"> Track Order</a></li>
+			<img src="img/search.jpeg" class="ik">
+			<img src="img/buy.jpeg" class="i">
+			
+			<img src="img/user.jpeg" class="ig">
+			
+
+		</ul>
+		
+		</div>
+		
+	</div>
+
+	<div class="Top">
+		<img src="img/funance.gif">
+		
+	</div>
+
+	<div class="mid">
+		<div class="m1">
+			<h2 style="line-height: 30px; font-style: italic; padding-top: 10px; font-weight: bolder; font-family: sans-serif;">YOU CAN'T SCARE ME I TRADE <br> OPTIONS</h2>
+			<p style="font-size: 19px; font-weight: normal; letter-spacing: 1px; font-style: italic; line-height: 26px; margin-top: 10px;">Options Trading is most risky type of trading , <br> therefore no one can scare option traders. This t-shirt <br> is exclusively designed for options trader who already <br> conquer every fear.</p>
+			<br> 
+			<button class="but">BUY NOW</button>
+			
+		</div>
+		<div class="m2">
+			<img src="img/t2.jpeg">
+
+			
+		</div>
+
+		<div class="m3">
+			<img src="img/t1.jpeg">
+			
+		</div>
+		<div class="m4">
+			<h2 style="line-height: 35px; font-style: italic; padding-top: 10px; font-weight: bold; letter-spacing: 1.5px; font-family: sans-serif;"> ASA KASA KAY? T-SHIRT </h2>
+			<p style="font-size: 19px; font-weight: normal; font-style: italic; line-height: 26px; letter-spacing: 1px; margin-top: 10px; ">This T-shirt represents the story of every trader as well <br> as an investor. It illustrates the unpredictable ups and <br> downs in the market, which forces us to ask the <br>
+								question...</p>
+								<br>
+			<p style="font-size: 18px; margin-bottom: 3px;">असं कसं काय?</p>
+
+			<button class="but">BUY NOW</button>
+			
+		</div>
+		<div class="m5">
+			<h2 style="line-height: 35px; font-style: italic; padding-top: 15px; font-weight: bold; font-family: sans-serif; letter-spacing: 1.5px;">BEING STOCKOHOLIC T-SHIRT</h2>
+			<p style="font-size: 19px; font-weight: normal; font-style: italic; line-height: 26px; letter-spacing: 1px; margin-top: 10px;">This design is specially made for those who are <br> hooked on to the stock market. Show off your inner <br> trader with this T-shirt. We would like to add, this is not
+				injurious to your health! </p> <br>
+				<button class="but">BUY NOW</button>
+
+			
+		</div>
+		<div class="m6">
+			<img src="img/t3.jpeg">
+			
+		</div>
+		<div class="m7">
+			<img src="img/t4.jpeg">
+			
+		</div>
+		<div class="m8">
+			<h2 style="line-height: 35px; font-style: italic; padding-top: 20px; font-weight: bold; font-family: sans-serif; letter-spacing: 1.5px;">STOCK STALKER T-SHIRT</h2>
+			<p  style="font-size: 19px; font-weight: normal; font-style: italic; line-height: 26px; letter-spacing: 1px; margin-top: 20px;  ">Trading requires alertness and an active eye on the <br> stock market. This t-shirt is for those who actually <br>follow that. So, let the stalking begin.</p>
+
+			<br>
+					<button class="but">BUY NOW</button>
+
+			
+		</div>
+		<div class="m9">
+			<h2 style="line-height: 35px; font-style: italic; padding-top: 20px; font-weight: bold;font-family: sans-serif; letter-spacing: 1.5px;">DIARY POWERBANK</h2>
+			<p style="font-size: 19px; font-weight: normal; font-style: italic; line-height: 32px; letter-spacing: 1px; margin-top: 20px;  "> Diary with Powerbank <br> 
+
+				Diary Powerbank with USB <br> 
+
+				Cell type: Lithium Polymer PU Leather Diary.</p>
+				 <br>
+				 <button class="but">BUY NOW</button>
+
+			
+		</div>
+		<div class="m10">
+			<img src="img/lap.jpeg">
+			
+		</div>
+
+		<div class="m11">
+			<img src="img/t5.jpeg">
+
+			
+		</div>
+		<div class="m12">
+			<h2 style="line-height: 30px; font-style: italic; padding-top: 0px; margin-top: 80px;font-family: sans-serif; font-weight: bold; letter-spacing: 1.2px;">INVEST IN KNOWLEDGE</h2>
+			
+			<button  class="but2">STOCK MARKET COURCE</button>
+			
+		</div>
+		<div class="m13">
+			<h2 style="line-height: 35px; font-style: italic; padding-top: 00px; font-family: sans-serif; margin-top: 40px; font-weight: bold; letter-spacing: 1.3px;">WE ARE HERE TO HELP YOU</h2>
+			<p  style="font-size: 19px; font-weight: normal; font-style: italic; line-height: 36px; letter-spacing: 1px; margin-top: 20px;   ">support@rachanaranade.store <br>
+
+          &nbsp;+91 73850 17846</p>
+			
+		</div>
+		<div class="m14">
+			<img src="img/t6.jpeg">
+			
+		</div>
+		<div class="m15">
+
+		<p style="text-align: center; letter-spacing: 1px; font-size: 32px; ">Start your investing journey with this video. </p>
+		<p style="text-align: center;">_______</p>
+		</div>
+
+			<div class="m16">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Xn7KWR9EOGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<p style="text-align: center; margin-top: 70px;">_________</p>
+				
+			</div>
+			<div class="m17">
+				<div class="f1">
+				<ul>
+					<li>Contact Us</li>
+					<li>Shipping policy</li>
+					<li>Terms of Service</li>
+					<li>Terms and Conditions</li>
+					<li>Refund policy</li>
+
+
+
+
+
+
+					
+				</ul>
+				</div>
+				<div class="f2">
+					<p style="text-align: center; font-size: 19px; padding-top: 20px; font-style: italic;">© 2021, funance.store</p>
+					<img src="img/foot.jpeg" style="margin-left: 60px; margin-top: 30px;">
+				</div>
+				
+			</div>
+		
+	</div>
+
+</body>
+</html>

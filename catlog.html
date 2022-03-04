@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catlog</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.head{
+			width: 100%;
+			height: 80px;
+			background-color: wheat;
+		}
+		.h1{
+			float: left;
+			width: 40%;
+			height: 80px;
+			background-color: white;
+		}
+
+		.h1 img{
+			margin: 30px 10px 10px 180px;
+			float: left;
+		}
+		.h2{
+			width: 60%;
+			height: 80px;
+			float: right;
+			background-color:white;
+		}
+		.h2 ul{
+			display: block;
+			
+			overflow: hidden;
+
+		}
+		.h2 ul li{
+			display: inline-flex;
+			padding: 30px 5px 30px 10px;
+			margin-left:30px;
+			font-family: cursive;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-weight: bolder;
+
+		}
+		.ig{
+			float: right;
+			
+			margin: -55px 240px 20px 5px;
+
+		}
+		.ik{
+			margin-left: 60px;
+			margin-bottom: -10px;
+
+		}
+		.i{
+			margin-left: 10px;
+			margin-bottom: -12px;
+		}
+		.Top{
+			width: 100%;
+			height: 1480px;
+			background-color: white;
+
+		}
+		.t1{
+			width: 23%;
+			height: 300px;
+			float: left;
+			background-color: whitesmoke;
+			cursor: pointer;
+			margin: 70px 5px 10px 180px;
+		}
+		.t1:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.Ra{
+			width: 100%;
+			height: 190px;
+			margin-top: 17px;
+			cursor: pointer;
+		}
+		.cir{
+			width: 70px;
+			height: 50px;
+			border:2px solid darkgoldenrod;
+			float: left;
+			border-radius: 40%;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		.t2{
+			cursor: pointer;
+			width: 23%;
+			height: 300px;
+			float: left;
+			background-color: whitesmoke;
+			margin: 70px 5px 10px 30px;
+		}
+		.t2:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.t3{
+			width: 23%;
+			height: 300px;
+			cursor: pointer;
+			float: left;
+			background-color: whitesmoke;
+			margin: 70px 5px 10px 30px;
+		}
+		.t3:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.sub1{
+			width: 20%;
+			height: 60px;
+			background-color: ;
+			float: left;
+			line-height: 25px;
+			text-align: center;
+			margin-top: 10px;
+			margin-left: 190px;
+			cursor: pointer;
+		}
+		.sub2{
+			width: 20%;
+			height: 60px;
+			background-color:;
+			cursor: pointer;
+			float: left;
+			text-align: center;
+			line-height: 25px;
+			margin-top: 10px;
+			margin-left: 90px;
+		}
+		.sub3{
+			width: 20%;
+			height: 60px;
+			background-color: ;
+			float: left;
+			text-align: center;
+			cursor: pointer;
+			line-height: 25px;
+			margin-top: 10px;
+			margin-left: 70px;
+		}
+		.t4{
+			width: 23%;
+			height: 300px;
+			cursor: pointer;
+			float: left;
+			background-color: whitesmoke;
+			margin: 60px 5px 10px 180px;
+		}
+		.t4:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.t5{
+			width: 23%;
+			height: 300px;
+			float: left;
+			background-color: whitesmoke;
+			margin: 60px 5px 10px 30px;
+			cursor: pointer;
+		}
+		.t5:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.Ra2{
+			width: 100%;
+			height: 280px;
+			margin-top: 10px;
+			cursor: pointer;
+
+		}
+		.t6{
+			width: 23%;
+			height: 300px;
+			float: left;
+			cursor: pointer;
+			background-color: whitesmoke;
+			margin: 60px 5px 10px 30px;
+		}
+		.t6:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.sub4{
+			width: 20%;
+			height: 60px;
+			background-color: ;
+			float: left;
+			line-height: 25px;
+			text-align: center;
+			margin-top: 10px;
+			margin-left: 190px;
+			cursor: pointer;
+		}
+		.sub5{
+			width: 20%;
+			height: 70px;
+			background-color: ;
+			float: left;
+			text-align: center;
+			cursor: pointer;
+			line-height: 25px;
+			margin-top: 10px;
+			margin-left: 90px;
+		}
+
+		.sub6{
+			cursor: pointer;
+			width: 20%;
+			height: 70px;
+			background-color: ;
+			float: left;
+			text-align: center;
+			line-height: 25px;
+			margin-top: 10px;
+			margin-left: 70px;
+		}
+		.t7{
+			width: 23%;
+			height: 300px;
+			float: left;
+			cursor: pointer;
+			background-color: whitesmoke;
+			margin: 50px 5px 10px 180px;
+		}
+		.t7:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.t8{
+			width: 23%;
+			height: 300px;
+			float: left;
+			background-color: whitesmoke;
+			margin: 50px 5px 10px 30px;
+			cursor: pointer;
+		}
+		.t8:hover{
+			opacity: 0.9;
+			transition: all 0.4s ease;
+		}
+		.Ra3{
+			width: 100%;
+			cursor: pointer;
+			height: 300px;
+
+		}
+
+
+		.m17{
+			width: 100%;
+			height: 220px;
+			background-color: white;
+			float: left;
+			margin-top: 80px;
+		}
+		.f1{
+			width: 40%;
+			height: 19px;
+			background-color: white;
+			float: left;
+			margin-top: 20px;
+		}
+		.f1 ul{
+			list-style: none;
+			display: block;
+			margin-left: 200px;
+
+		}
+		.f1 ul li{
+			line-height: 32px;
+			justify-content: space-between;
+			font-size: 20px;
+			font-style: italic;
+		}
+		.f2{
+			width: 45%;
+			height: 190px;
+			background-color: white;
+			float: right;
+			margin-top: 20px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+	
+
+	</style>
+</head>
+<body>
+
+
+
+	<div class="head">
+		<div class="h1">
+		<img src="img/flogo.png">
+		</div>
+		<div class="h2">
+		<ul>
+
+			<li> <a href="funance.html"> Home </a></li>
+			<li>  <a href="catlog.html"> Catlog</a></li>
+			<li>  <a href="contact_us.html">Contact Us</a></li>
+			<li> <a href="track_order.html"> Track Order </a></li>
+			<img src="img/search.jpeg" class="ik">
+			<img src="img/buy.jpeg" class="i">
+			
+			<img src="img/user.jpeg" class="ig">
+			
+
+		</ul>
+		
+		</div>
+		
+	</div>
+	<div class="Top">
+		<h2 style="text-align: center; padding-top: 70px; font-size: 33px;">Products</h2>
+		<p style="text-align: center; padding-top: 10px;">_______</p>
+
+		<div class="t1">
+			<div class="cir">
+			<p style="margin-top: 10px; margin-left: 8px; color: darkgoldenrod; font-size: 15px">SAVE RS.100
+			</p>
+			</div>
+			<img src="img/t7.jpeg" class="Ra">
+
+			
+		</div>
+
+
+		<div class="t2">
+			<div class="cir">
+			<p style="margin-top: 10px; margin-left: 8px; color: darkgoldenrod; font-size: 15px">SAVE RS.100
+			</p>
+			</div>
+			<img src="img/t13.jpeg" class="Ra">
+
+			
+		</div>
+
+		<div class="t3">
+			<div class="cir">
+			<p style="margin-top: 10px; margin-left: 8px; color: darkgoldenrod; font-size: 15px">SAVE RS.500
+			</p>
+			</div>
+			<img src="img/t8.jpeg" class="Ra">
+
+			
+		</div>
+		<div class="sub1">
+			<h3 style="letter-spacing: 1px; font-weight: normal; font-style: italic; font-size: 22px;">Asa kasa kay? T-shirt</h3>
+			<p> —<b style="font-weight: bold; font-size: 17px;"> RS. 2,499 </b></p>
+			
+		</div>
+		<div class="sub2">
+			<h3 style="letter-spacing: 1px; font-style: italic; font-weight: normal; font-size: 22px;">Being Stockholic T-shirt </h3>
+			<p> <b style="font-weight: bold; font-size: 17px;"> RS. 2,499 </b></p>
+			
+		</div>
+		<div class="sub3">
+			<h3 style="letter-spacing: 0.5px; font-weight: normal; font-style: italic; font-size: 21px;">Diary Powerbank — <b style="font-weight: bold; font-size: 17px;"> RS. 2,499 </b></h3>
+			
+			
+		</div>
+
+
+		<div class="t4">
+			<div class="cir">
+			<p style="margin-top: 10px; margin-left: 8px; color: darkgoldenrod; font-size: 15px">SAVE RS.100
+			</p>
+			</div>
+			<img src="img/t14.jpeg" class="Ra">
+			
+		</div>
+
+
+		<div class="t5">
+			
+			<img src="img/t9.jpeg" class="Ra2">
+			
+		</div>
+
+
+		<div class="t6">
+			
+			<img src="img/t12.jpeg" class="Ra2">
+			
+		</div>
+		<div class="sub4">
+			<h3 style="letter-spacing: 0.4px;font-style: italic; font-size: 20px;font-weight: normal;">Stock Stalker T-shirt — SALE PRICERS. <b style="font-size: 17px;">RS 499 </b></h3>	
+		</div>
+
+		<div class="sub5">
+			<h3 style="letter-spacing: 0.5px;  font-style: italic; font-size: 20px; font-weight: normal;">You Can't Scare Me. I Trade In Options ( Black ). — <b style="font-size: 17px;">RS. 499 </b></h3>
+		</div>
+
+		<div class="sub6">
+			<h3 style="letter-spacing: 0.5px; font-size: 20px; font-style: italic; font-weight: normal;">You Can't Scare Me. I Trade In Options ( Blue ) — <b style="font-size: 17px;">RS. 499</b> </h3>
+		</div>
+
+
+		<div class="t7">
+			
+			<img src="img/t11.jpeg" class="Ra2">
+				<h3 style="letter-spacing: 0.5px; margin-top: 20px; margin-left: 20px;cursor: pointer; font-style: italic; font-weight: normal; font-size: 19px;  line-height: 26px;">You Can't Scare Me. I Trade In Options( Grey ) — <b style="font-size: 17px;">RS. 499</b></h3>
+			
+		</div>
+
+		<div class="t8">
+			
+			<img src="img/t10.jpeg" class="Ra3">
+		<h3 style="letter-spacing: 0.5px; margin-top: 20px; margin-left: 20px; font-style: italic; cursor: pointer; line-height: 26px; font-weight: normal; font-size: 20px; ">	You Can't Scare Me. I Trade In Options( White ) — <b style="font-size: 17px;">RS. 499 </b></h3>
+
+		
+			
+		</div>
+		
+	</div>
+	<div class="m17">
+		<p style="text-align: center;">________</p>
+				<div class="f1">
+				<ul>
+					<li>Contact Us</li>
+					<li>Shipping policy</li>
+					<li>Terms of Service</li>
+					<li>Terms and Conditions</li>
+					<li>Refund policy</li>
+
+
+
+
+
+
+					
+				</ul>
+				</div>
+				<div class="f2">
+					<p style="text-align: center; font-size: 19px; padding-top: 20px; font-style: italic;">© 2021, funance.store</p>
+					<img src="img/foot.jpeg" style="margin-left: 60px; margin-top: 30px;">
+				</div>
+				
+			</div>
+		
+
+</body>
+</html>
